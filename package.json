@@ -43,7 +43,9 @@
     "vue-router": "4.0.12",
     "vue3-json-editor": "^1.1.4",
     "vuedraggable": "^4.1.0",
-    "vuex": "^4.0.2"
+    "vuex": "^4.0.2",
+    "sweetalert2": "11.9.0"
+
   },
   "devDependencies": {
     "@types/echarts": "^4.9.10",
