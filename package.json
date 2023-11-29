@@ -10,6 +10,7 @@
     "build:test": "sh init.project.sh && vue-cli-service build --mode=test",
     "build:prod": "sh init.project.sh && vue-cli-service build --mode=prod",
     "build:client": "sh init.project.sh && vue-cli-service build --mode=client --dest ../deeptest-main/client/ui",
+    "build:demo": "sh init.project.sh && vue-cli-service build --mode=demo",
 
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
