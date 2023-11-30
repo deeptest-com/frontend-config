@@ -6,11 +6,11 @@
   "scripts": {
     "serve": "sh init.project.sh && vue-cli-service --mode=dev serve",
 
+    "build": "sh init.project.sh && vue-cli-service build --mode=production",
     "build:dev": "sh init.project.sh && vue-cli-service build --mode=dev",
     "build:test": "sh init.project.sh && vue-cli-service build --mode=test",
-    "build:prod": "sh init.project.sh && vue-cli-service build --mode=prod",
     "build:client": "sh init.project.sh && vue-cli-service build --mode=client",
-    "build:demo": "sh init.project.sh && vue-cli-service build --mode=demo",
+    "build:demo": "sh init.project.sh && vue-cli-service build --mode=prod",
 
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
