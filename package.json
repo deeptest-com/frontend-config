@@ -10,7 +10,7 @@
     "build:dev": "sh init.project.sh && vue-cli-service build --mode=dev",
     "build:test": "sh init.project.sh && vue-cli-service build --mode=test",
     "build:client": "sh init.project.sh && vue-cli-service build --mode=client",
-    "build:demo": "sh init.project.sh && vue-cli-service build --mode=production",
+    "build:demo": "sh init.project.sh && APP_CONF=demo vue-cli-service build --mode=production",
 
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
