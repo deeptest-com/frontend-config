@@ -4,12 +4,10 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "serve": "sh init.project.sh && vue-cli-service --mode=dev serve",
+    "serve": "sh init.project.sh && vue-cli-service serve --mode=development",
 
     "build": "sh init.project.sh && vue-cli-service build --mode=production",
-    "build:dev": "sh init.project.sh && vue-cli-service build --mode=dev",
-    "build:test": "sh init.project.sh && vue-cli-service build --mode=test",
-    "build:client": "sh init.project.sh && vue-cli-service build --mode=client",
+    "build:client": "sh init.project.sh && APP_CONF=client vue-cli-service build --mode=production",
     "build:demo": "sh init.project.sh && APP_CONF=demo vue-cli-service build --mode=production",
 
     "test:unit": "vue-cli-service test:unit",
