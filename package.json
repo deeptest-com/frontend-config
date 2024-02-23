@@ -4,22 +4,30 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "serve": "sh init.project.sh && vue-cli-service serve --mode=development",
-
-    "build": "sh init.project.sh && vue-cli-service build --mode=production",
-    "build:client": "sh init.project.sh && APP_CONF=client vue-cli-service build --mode=production",
-    "build:demo": "sh init.project.sh && APP_CONF=demo vue-cli-service build --mode=production",
-
+    "serve": "sh init.project.sh && vue-cli-service serve",
+    "local": "sh init.project.sh && vue-cli-service --mode=local serve",
+    "test": "sh init.project.sh && vue-cli-service --mode=test serve",
+    "dev": "sh init.project.sh && vue-cli-service --mode=development serve",
+    "build:dev": "sh init.project.sh && vue-cli-service build --mode=dev",
+    "build:test": "sh init.project.sh && vue-cli-service build --mode=test",
+    "build:test1": "sh init.project.sh && vue-cli-service build --mode=test1",
+    "build:saas-dev": "sh init.project.sh && vue-cli-service build --mode=saas-dev",
+    "build:prod": "sh init.project.sh && vue-cli-service build --mode=prod",
+    "build:pre": "sh init.project.sh && vue-cli-service build --mode=pre",
+    "build:client": "sh init.project.sh && vue-cli-service build --mode=client --dest ../leyanapi-backend/client/ui",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "svgo": "svgo -f src/assets/iconsvg --config=src/assets/iconsvg/svgo.yml"
   },
+  "postinstall": "node ./compatible-wujie.js",
   "dependencies": {
     "@ant-design/icons-vue": "^6.0.1",
     "@handsontable/vue3": "^12.3.0",
+    "@leyan/feedback": "0.0.4",
     "@toast-ui/editor": "^2.5.3",
     "@vuepic/vue-datepicker": "^3.6.5",
-    "ant-design-vue": "^2.2.8",
+    "ant-design-vue": "2.2.8",
+    "ant-design-vue-v3": "npm:ant-design-vue@4.1.1",
     "axios": "^0.21.4",
     "core-js": "^3.18.0",
     "echarts": "^4.9.0",
@@ -35,7 +43,7 @@
     "node-fetch": "2.6.6",
     "nprogress": "^0.2.0",
     "sortablejs": "^1.15.0",
-    "vue": "^3.2.18",
+    "vue": "3.3.4",
     "vue-contenteditable": "^4.1.0",
     "vue-i18n": "9.1.9",
     "vue-loader-v16": "^16.0.0-beta.5.4",
@@ -44,7 +52,6 @@
     "vuedraggable": "^4.1.0",
     "vuex": "^4.0.2",
     "sweetalert2": "11.9.0"
-
   },
   "devDependencies": {
     "@types/echarts": "^4.9.10",
