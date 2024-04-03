@@ -8,6 +8,7 @@
 
     "build": "sh init.project.sh && vue-cli-service build --mode=production",
     "build:client": "sh init.project.sh && APP_CONF=client vue-cli-service build --mode=production",
+    "build:web": "sh init.project.sh && APP_CONF=web vue-cli-service build --mode=production",
     "build:demo": "sh init.project.sh && APP_CONF=demo vue-cli-service build --mode=production",
 
     "test:unit": "vue-cli-service test:unit",
@@ -23,6 +24,7 @@
     "ant-design-vue": "2.2.8",
     "ant-design-vue-v3": "npm:ant-design-vue@4.1.1",
     "axios": "^0.21.4",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "core-js": "^3.18.0",
     "echarts": "^4.9.0",
     "handsontable": "^12.3.0",
