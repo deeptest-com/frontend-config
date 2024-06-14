@@ -34,7 +34,6 @@
     "handsontable": "^12.3.0",
     "localforage": "^1.10.0",
     "lodash.debounce": "^4.0.8",
-    "marked": "11.1.0",
     "md-editor-v3": "^2.4.1",
     "mitt": "^3.0.0",
     "moment": "^2.29.4",
