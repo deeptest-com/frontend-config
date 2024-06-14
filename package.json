@@ -13,6 +13,7 @@
 
     "build:web": "sh init.project.sh && APP_CONF=web vue-cli-service build --mode=production",
     "build:demo": "sh init.project.sh && APP_CONF=demo vue-cli-service build --mode=production",
+    "build:nancal": "sh init.project.sh && APP_CONF=nancal vue-cli-service build --mode=production",
 
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
